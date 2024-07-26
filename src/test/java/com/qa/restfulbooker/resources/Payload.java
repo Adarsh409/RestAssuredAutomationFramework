@@ -19,8 +19,13 @@ public class Payload {
 			obj = formCreateUpdateBookingPayload(requestParametersList);
 			break;
 		}
+
+		case "PartialUpdateBooking": {
+			obj = formPartialUpdateBookingPayload(requestParametersList);
+			break;
 		}
-		
+		}
+
 		return obj;
 
 	}
@@ -40,6 +45,13 @@ public class Payload {
 
 	}
 
-	
+	public static Booking formPartialUpdateBookingPayload(List<Map<String, String>> bookingDetailsList) {
+		BookingDates bookingDatesObj = new BookingDates();
+		Booking bookingObj = new Booking();
+		bookingDatesObj.setCheckin(bookingDetailsList.get(0).get("checkindate"));
+		bookingDatesObj.setCheckout(bookingDetailsList.get(0).get("checkoutdate"));
+		bookingObj.setBookingdates(bookingDatesObj);
+		return bookingObj;
+	}
 
 }

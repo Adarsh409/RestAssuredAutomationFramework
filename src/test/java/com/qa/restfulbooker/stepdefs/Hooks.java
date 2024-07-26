@@ -11,7 +11,7 @@ public class Hooks {
 	@Before
 	public void beforeHooks() {
 		TestContext.requestSpec = RestAssured.given().spec(SpecBuilders.getRequestSpec());
-		
+
 	}
 
 }
