@@ -8,6 +8,7 @@ import io.restassured.path.json.JsonPath;
 
 public class TokenGenerator {
 
+	// To generate access token
 	public static String generateToken() {
 		Auth authObj = new Auth();
 		authObj.setUsername("admin");
