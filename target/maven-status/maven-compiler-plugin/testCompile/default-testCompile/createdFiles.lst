@@ -1,0 +1,11 @@
+com\qa\restfulbooker\resources\SpecBuilders.class
+com\qa\restfulbooker\stepdefs\UpdateBookingStepDefs.class
+com\qa\restfulbooker\resources\APIResources.class
+com\qa\restfulbooker\resources\TokenGenerator.class
+com\qa\restfulbooker\stepdefs\GetBookingStepDefs.class
+com\qa\restfulbooker\resources\Payload.class
+com\qa\restfulbooker\testcontext\TestContext.class
+com\qa\restfulbooker\runner\TestRunner.class
+com\qa\restfulbooker\stepdefs\CreateBookingStepDefs.class
+com\qa\restfulbooker\stepdefs\Hooks.class
+com\qa\restfulbooker\stepdefs\DeleteBookingStepDefs.class

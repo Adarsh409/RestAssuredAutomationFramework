@@ -5,7 +5,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Cookie=token=d1910dfa85ff6e9
+Headers:		Cookie=token=fab0331e09bfef1
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -24,19 +24,19 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Cowboy
-Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722018226&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=LX0ASVhmfCeKMfMvgwSRU4AyID%2FzKGVpn2EcJ0DxZR4%3D"}]}
-Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722018226&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=LX0ASVhmfCeKMfMvgwSRU4AyID%2FzKGVpn2EcJ0DxZR4%3D
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727347435&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=MOWsL4MunN6zlo1SbvSruOsSeLIv6XJnTLHBNluPml0%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727347435&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=MOWsL4MunN6zlo1SbvSruOsSeLIv6XJnTLHBNluPml0%3D
 Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
 Connection: keep-alive
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
 Content-Length: 199
-Etag: W/"c7-/DKG8uQs4Q1I8HKQtCvvayg7nnM"
-Date: Fri, 26 Jul 2024 18:23:46 GMT
+Etag: W/"c7-z7tBRxwUcn+uSp+2bXUdTMq4jfM"
+Date: Thu, 26 Sep 2024 10:43:55 GMT
 Via: 1.1 vegur
 
 {
-    "bookingid": 1174,
+    "bookingid": 1677,
     "booking": {
         "firstname": "Mason",
         "lastname": "Mount",
@@ -48,4 +48,103 @@ Via: 1.1 vegur
         },
         "additionalneeds": "Breakfast"
     }
+}
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=fab0331e09bfef1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Mason",
+    "lastname": "Mount",
+    "totalprice": 230.0,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-07-01",
+        "checkout": "2024-07-23"
+    },
+    "additionalneeds": "Breakfast"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727347438&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=mloEF2xjAYHzqPi%2BlHyBMlXYM2JhI%2FJW6afhT5Ofy7g%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727347438&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=mloEF2xjAYHzqPi%2BlHyBMlXYM2JhI%2FJW6afhT5Ofy7g%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 199
+Etag: W/"c7-xceZfCwfML2ib3eA0mtmctieM4I"
+Date: Thu, 26 Sep 2024 10:43:58 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 1699,
+    "booking": {
+        "firstname": "Mason",
+        "lastname": "Mount",
+        "totalprice": 230,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-07-01",
+            "checkout": "2024-07-23"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/1699
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	bookingId=1699
+Headers:		Cookie=token=fab0331e09bfef1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": null,
+    "lastname": null,
+    "totalprice": 0.0,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2024-07-12",
+        "checkout": "2024-07-29"
+    },
+    "additionalneeds": null
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727347440&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=RqfEmx9sAZNEX6%2BNS%2BBVA1oQ5RVl3MoyC8rdfYfd2Bc%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727347440&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=RqfEmx9sAZNEX6%2BNS%2BBVA1oQ5RVl3MoyC8rdfYfd2Bc%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 156
+Etag: W/"9c-sy8bNt1NVzVlUey9setpRS5MRcU"
+Date: Thu, 26 Sep 2024 10:44:00 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": null,
+    "lastname": null,
+    "totalprice": 0,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2024-07-12",
+        "checkout": "2024-07-29"
+    },
+    "additionalneeds": null
 }
