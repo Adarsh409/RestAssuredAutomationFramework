@@ -7,7 +7,8 @@ import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = ".//Features", glue = { "com.qa.restfulbooker.stepdefs" }, plugin = {
-		"json:target/jsonReports/cucmber-reports.json","pretty", "html:test-output.html" }, dryRun = false)
+		"json:target/jsonReports/cucmber-reports.json", "pretty",
+		"html:test-output.html" }, dryRun = false, tags = "@CreateBooking or @UpdateBooking")
 public class TestRunner {
 
 }

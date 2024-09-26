@@ -1,0 +1,57 @@
+-------------------------------------------------------------------------------
+Test set: com.qa.restfulbooker.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.84 s <<< FAILURE! -- in com.qa.restfulbooker.runner.TestRunner
+Update Booking.Partial Update -- Time elapsed: 4.122 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: instance type (null) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/properties/additionalneeds"}
+    instance: {"pointer":"/additionalneeds"}
+    domain: "validation"
+    keyword: "type"
+    found: "null"
+    expected: ["string"]
+error: instance type (null) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/properties/firstname"}
+    instance: {"pointer":"/firstname"}
+    domain: "validation"
+    keyword: "type"
+    found: "null"
+    expected: ["string"]
+error: instance type (null) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/properties/lastname"}
+    instance: {"pointer":"/lastname"}
+    domain: "validation"
+    keyword: "type"
+    found: "null"
+    expected: ["string"]
+
+  Actual: {"firstname":null,"lastname":null,"totalprice":0,"depositpaid":false,"bookingdates":{"checkin":"2024-07-12","checkout":"2024-07-29"},"additionalneeds":null}
+
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at com.qa.restfulbooker.stepdefs.CreateBookingStepDefs.response_should_match_with(CreateBookingStepDefs.java:65)
+	at ✽.User validates response with "UpdateBookingSchema.json" schema(file:///E:/Testing/Eclipse/RestAssuredAutomationFramework/./Features/updatebooking.feature:30)
+
