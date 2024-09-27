@@ -1,6 +1,6 @@
 Feature: CreateBooking
 
-@CreateBooking
+
 Scenario Outline: Create Booking
 Given User has "CreateBooking" payload with all the attributes
 |firstname|lastname|totalprice|depositpaid|checkindate|checkoutdate|additionalneeds|

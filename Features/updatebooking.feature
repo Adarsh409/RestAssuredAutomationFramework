@@ -18,7 +18,7 @@ Then User should get 200 response code
 And Check in date should be updated to "2024-08-01" and Check out date should be updated to "2024-08-23"
 And User validates response with "UpdateBookingSchema.json" schema
 
-@UpdateBooking
+@PartialUpdate
 Scenario: Partial Update
 Given User passes booking id in request URI
 And User has "PartialUpdateBooking" payload to update booking dates
@@ -27,4 +27,4 @@ And User has "PartialUpdateBooking" payload to update booking dates
 When User calls "PartialUpdateBooking" API with "PATCH" http method
 Then User should get 200 response code
 And Check in date should be updated to "2024-07-12" and Check out date should be updated to "2024-07-29"
-And User validates response with "UpdateBookingSchema.json" schema
+

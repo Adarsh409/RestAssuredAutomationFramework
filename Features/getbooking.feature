@@ -8,7 +8,7 @@ When User calls "CreateBooking" API with "POST" http method
 Then Booking id should be returned in reponse
 
 
-@GetBooking
+
 Scenario: GetBooking
 Given User passes booking id in request URI
 When User calls "GetBooking" API with "GET" http method
