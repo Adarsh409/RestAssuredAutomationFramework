@@ -1,0 +1,12 @@
+pipeline{
+agent any 
+stages{
+stage('main'){
+echo "In main branch"
+}
+stage('develop'){
+echo "In develop branch"
+}
+}
+
+}
